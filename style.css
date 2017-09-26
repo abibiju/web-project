@@ -1,0 +1,217 @@
+* {
+	font-family: 'Poiret One', cursive;
+	}
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+}
+/* top navigation */
+#a.container {
+	color: #d5d5d5;
+	padding-top:48px;
+	padding-left: 204px;
+	height: 350px;
+}
+.navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: transparent;
+      border: 0;
+      font-size: 140% !important;
+      letter-spacing: 4px;
+      opacity: 0.8;
+}
+.navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+}
+.navbar-nav li a:hover {
+      color: #000 !important;
+}
+.navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #000 !important;
+}
+.navbar-default .navbar-toggle {
+      border-color: transparent;
+}
+.open .dropdown-toggle {
+      color: #000;
+      background-color: #fff !important;
+}
+ .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: #fff !important;
+  }
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 130%;
+    top: 15px;
+    right: 35px;
+  }
+}
+/*CONTENT*/
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*slider*/
+bgimg-1 {
+  max-width: 300px;
+  height: 200px;
+  margin: 20px auto;
+  position: relative;
+}
+.slide1,.slide2,.slide3,.slide4,.slide5,.slide6 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.slide1 {
+  background: url(images/pic1.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade 10s infinite;
+-webkit-animation:fade 10s infinite;
+
+}
+.slide2 {
+  background: url(images/pic2.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade2 10s infinite;
+-webkit-animation:fade2 10s infinite;
+}
+.slide3 {
+    background: url(images/pic3.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade3 10s infinite;
+-webkit-animation:fade3 10s infinite;
+}
+.slide4 {
+    background: url(images/pic4.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade4 10s infinite;
+-webkit-animation:fade4 10s infinite;
+}
+.slide5 {
+    background: url(images/pic5.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade5 10s infinite;
+-webkit-animation:fade5 10s infinite;
+}
+.slide6 {
+    background: url(images/pic1.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade6 10s infinite;
+-webkit-animation:fade6 10s infinite;
+}
+@keyframes fade
+{
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  33.333% { opacity: 1}
+  66.666% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fade3
+{
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
+}
+@keyframes fade4
+{
+  0%   {opacity:0}
+  33.333% { opacity: 1}
+  66.666% { opacity: 0 }
+  100% { opacity: 0}
+}
+
+@keyframes fade5
+{
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade6
+{
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
+}
+/*content*/
+content {
+  opacity: 80%;
+}
+.bgimg-1 {
+  background-image: url("images/blue.jpg");
+  min-height: 100%;
+  opacity: 0.9;
+}
+
+.bgimg-2 {
+  background-image: url("images/pink.jpg");
+  min-height: 400px;
+  opacity: 0.9;
+}
+
+.bgimg-3 {
+  background-image: url("images/violet.jpg");
+  min-height: 400px;
+  opacity: 0.9;
+}
+
+.bgimg-4 {
+  background-image: url("images/blue.jpg");
+  min-height: 400px;
+  opacity: 0.9;
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+
+}
+
+.caption span.border {
+  background-color: transparent;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px 'Poiret One', cursive;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+        background-attachment: scroll;
+    }
+}
