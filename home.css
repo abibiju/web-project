@@ -86,13 +86,6 @@ h3 {
     transform: translateY(-2000px);
   }
 }
-/*logo*/
-.logo {
-	height:20%;
-	width: 20%;
-	margin: auto;
-	display: block;
-}
 /* top navigation */
 #a.container {
 	color: #d5d5d5;
@@ -144,3 +137,4 @@ h3 {
     right: 35px;
   }
 }
+/*content*/
