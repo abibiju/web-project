@@ -19,6 +19,23 @@ h1 {
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
+@include media-breakpoint-up(sm) {
+  h1, h3 {
+    font-size: 16px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 28px;
+  }
+}
 h3 {
 	color: white;
 	font-size: 30px;
